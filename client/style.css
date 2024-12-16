@@ -5,3 +5,49 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 90%;
+  margin: auto;
+}
+.card {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px -5px 20px rgba(43, 255, 0, 0.4);
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover {
+  box-shadow: 5px -5px 20px rgba(43, 255, 0, 1);
+}
+h2,h1 {
+  background: #d8ffbd;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+h1 {
+  padding: 1rem;
+  border-radius: 0;
+}
+.username {
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
