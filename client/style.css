@@ -57,7 +57,7 @@ img {
   box-shadow: 0 0 var(--box-shadow-strength) var(--color);
   scale: var(--scale);
   rotate: var(--rotation);
-  transition: all var(--anim-default) ease, scale var(--anim-duration-out) var(--ease), rotate var(--anim-duration-out) ease;
+  transition: all var(--anim-default) ease, scale var(--anim-duration-in) var(--ease), rotate var(--anim-duration-in) ease;
 }
 .card:hover:nth-child(odd) {
   rotate: calc(var(--rotation)*-1);
