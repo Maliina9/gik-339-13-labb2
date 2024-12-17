@@ -12,6 +12,7 @@
   --anim-duration-in: 0.2s;
   --anim-duration-out: 0.7s;
   --color: rgba(43, 255, 0, 1);
+  --box-shadow-strength: 20px;
   --ease: linear(0, 0.618 4.6%, 1.072 9.7%, 1.358 15.3%, 1.446 18.4%, 1.497 21.7%, 1.512 23.9%, 1.514 26.2%, 1.481 31.5%, 1.421 36.4%, 1.174 53.4%, 1.108 59.5%, 1.059 65.7%, 1.028 71.9%, 1.009 78.9%, 1);
   /* --ease: ease; */
 }
@@ -42,7 +43,7 @@ img {
   padding: 2rem;
   margin: 1rem;
   border-radius: 1rem;
-  box-shadow: 5px -5px 20px var(--color);
+  box-shadow: 5px -5px var(--box-shadow-strength) var(--color);
   background-color: #121212;
   display: flex;
   flex-direction: column;
@@ -51,9 +52,10 @@ img {
   transition: all var(--anim-default) ease, scale var(--anim-duration-out) var(--ease), rotate var(--anim-duration-out) ease;
   background-image: url(./plate.jpg);
   background-size: 100% 100%;
+  animation: pulsateShadow 2s infinite linear;
 }
 .card:hover {
-  box-shadow: 0 0 20px var(--color);
+  box-shadow: 0 0 var(--box-shadow-strength) var(--color);
   scale: var(--scale);
   rotate: var(--rotation);
   transition: all var(--anim-default) ease, scale var(--anim-duration-out) var(--ease), rotate var(--anim-duration-out) ease;
@@ -81,3 +83,66 @@ h1 {
   font-size: 0.9rem;
   font-weight: 400;
 }
+@keyframes pulsateShadow {
+  0% {
+    --box-shadow-strength: 20px;
+  }
+  5% {
+    --box-shadow-strength: 21px;
+  }
+  10% {
+    --box-shadow-strength: 22px;
+  }
+  15% {
+    --box-shadow-strength: 23px;
+  }
+  20% {
+    --box-shadow-strength: 24px;
+  }
+  25% {
+    --box-shadow-strength: 25px;
+  }
+  30% {
+    --box-shadow-strength: 26px;
+  }
+  35% {
+    --box-shadow-strength: 27px;
+  }
+  40% {
+    --box-shadow-strength: 28px;
+  }
+  45% {
+    --box-shadow-strength: 29px;
+  }
+  50% {
+    --box-shadow-strength: 30px;
+  }
+  55% {
+    --box-shadow-strength: 29px;
+  }
+  60% {
+    --box-shadow-strength: 28px;
+  }
+  65% {
+    --box-shadow-strength: 27px;
+  }
+  70% {
+    --box-shadow-strength: 26px;
+  }
+  75% {
+    --box-shadow-strength: 25px;
+  }
+  80% {
+    --box-shadow-strength: 24px;
+  }
+  85% {
+    --box-shadow-strength: 23px;
+  }
+  90% {
+    --box-shadow-strength: 22px;
+  }
+  95% {
+    --box-shadow-strength: 21px;
+  }
+  100% {
+    --box-sha
