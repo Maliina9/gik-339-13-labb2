@@ -14,7 +14,7 @@ container.addEventListener("mouseenter", event => {
     // Lägg till stil på alla kort som inte är hoverade
     document.querySelectorAll(".card").forEach(card => {
       if (card !== hoveredCard) {
-        card.style.opacity = "0.6";
+        card.style.opacity = "0.8";
         card.style.filter = "blur(2px)";
       }
     });
