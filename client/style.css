@@ -145,4 +145,6 @@ h1 {
     --box-shadow-strength: 21px;
   }
   100% {
-    --box-sha
+    --box-shadow-strength: 20px;
+  }
+}
